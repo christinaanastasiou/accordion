@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  background: #f1f1f1; }
+
+.container {
+  margin: 10px auto;
+  max-width: 750px; }
+
+.accordion {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.card {
+  display: none;
+  -webkit-box-ordinal-group: 99;
+  -moz-box-ordinal-group: 99;
+  -ms-flex-order: 99;
+  -webkit-order: 99;
+  order: 99;
+  width: 100%;
+  padding: 15px;
+  background: #fff; }
+  .card__label {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    display: block;
+    padding: 12px 20px;
+    margin-right: 2px;
+    background: #d0d0d0;
+    font-weight: bold;
+    cursor: pointer; }
+    .card__label:last-of-type {
+      margin-right: 0; }
+    .card__label:first-of-type {
+      margin-top: 0; }
+  .card__header {
+    font-size: 1.5em;
+    margin-bottom: 10px; }
+  .card__text {
+    margin: 5px 0; }
+
+input[type=radio] {
+  width: 0;
+  opacity: 0;
+  display: none; }
+
+input[type="radio"]:checked + label {
+  background: #fff; }
+
+input[type="radio"]:checked + label + .card {
+  display: block; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 500px;
+    padding: 0 10px; }
+
+  .accordion {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+  .card {
+    -webkit-box-ordinal-group: initial;
+    -moz-box-ordinal-group: initial;
+    -ms-flex-order: initial;
+    -webkit-order: initial;
+    order: initial; }
+    .card__label {
+      -webkit-box-ordinal-group: initial;
+      -moz-box-ordinal-group: initial;
+      -ms-flex-order: initial;
+      -webkit-order: initial;
+      order: initial;
+      margin-right: 0;
+      margin-top: 2px; } }
+@media screen and (max-width: 375px) {
+  .card__text {
+    text-align: justify; } }
+@media screen and (max-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .accordion {
+    display: table; } }
+
+/*# sourceMappingURL=main.css.map */

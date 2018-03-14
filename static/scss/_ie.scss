@@ -1,0 +1,6 @@
+// styles for IE10+
+@media screen and (max-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.accordion {
+	 	display: table; 
+	}
+}
